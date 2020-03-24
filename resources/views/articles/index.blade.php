@@ -4,7 +4,7 @@
 
 <div class="container">
     @foreach ($articles as $article)
-        
+
 
     <div class="card mt-3">
         <div class="card-body d-flex flex-row">
@@ -12,10 +12,10 @@
 
             <div>
                 <div class="font-weight-bold">
-                {{ $article->user->name }}
+                    {{ $article->user->name }}
                 </div>
                 <div class="font-weight-lighter">
-                   {{ $article->created_at->format('Y/m/d H:i') }}
+                    {{ $article->created_at->format('Y/m/d H:i') }}
                 </div>
             </div>
         </div>
